@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <div id="console" class="container">
+      <h3>Image Identifier</h3>
+      <div>
+        <img
+          id="img"
+          crossOrigin
+          src="https://i.imgur.com/JlUvsxa.jpg"
+          width="227"
+          height="227"
+        />
+      </div>
+
+      <div id="upload">
+        <label for="files" class="btn">Select Image</label>
+        <input
+          id="files"
+          style="visibility:hidden;"
+          type="file"
+          multiple="false"
+          accept="image/*"
+          id="finput"
+          onchange="doUpload(this)"
+        />
+      </div>
+      <button id="predict" class="btn" disabled>Identify</button>
+      <ul></ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

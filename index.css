@@ -1,0 +1,28 @@
+html {
+  background-size: cover;
+  text-align: center;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  flex: 1;
+  align-items: center;
+}
+
+.console {
+  width: 30rem;
+  height: 30rem;
+  border: solid blue 20px;
+  border-radius: 50%;
+  position: relative;
+  margin: 40rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#upload {
+  transform: translateX(2rem);
+  margin: 1rem auto;
+  border: solid teal 1px;
+}
